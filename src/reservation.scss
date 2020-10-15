@@ -1,0 +1,88 @@
+//Whole container styling including the contact and hours
+
+.container {
+    background-color: #fafafa;
+    margin: 0 auto;
+    padding: 100px;
+    box-shadow: rgba($color: #000000, $alpha: 0.1);
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    &-time {
+        background-color: rgba($color: #000000, $alpha: 0.95);
+        padding: 100px;
+        outline: 3px dashed #998100;
+        // moving the outline inside with the offset
+        outline-offset: -30px;
+        text-align: center;
+    }
+
+    &-form {
+        padding: 20px 0;
+        margin: 0 auto;
+        color: #000000;
+        text-align: center;
+    }
+}
+
+.heading {
+    font-size: 35px;
+    text-transform: uppercase;
+
+    &_days {
+        color: #998100;
+        font-size: 30px;
+    }
+
+    &_phone {
+        font-size: 20px;
+    }
+}
+
+
+// Styling for the reservation form
+
+form {
+    display: grid;
+    grid-row-gap: 20px;
+
+    &-field {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+form p {
+    font-weight: 600;
+}
+
+input, select {
+    pad: 10px 15px;
+}
+
+.btn {
+    background-color: rgba($color: #000000, $alpha: 0.95);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 100px;
+    box-shadow: 7px 10px 12px rgba($color: #000000, $alpha: 0.1);
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+// Error and Success Messages
+.errorMsg {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.successMsg {
+    color: #6B8E23;
+    margin-bottom: 10px;
+}

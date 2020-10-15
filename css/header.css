@@ -1,0 +1,52 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(204, 201, 204, 0.8)), url(./images/trattoria.jpeg);
+  background-size: cover;
+  background-position: top;
+}
+
+.header__header-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-text {
+  color: grey;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+
+.header-text--main-text {
+  display: block;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 2rem;
+  animation-name: mainText;
+  animation: ease-out 4s;
+}
+
+@keyframes mainText {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.header-text--main-text--slogan-text {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  text-align: center;
+  animation: comingUp 2s ease-out;
+  padding: 2rem;
+}
+/*# sourceMappingURL=header.css.map */

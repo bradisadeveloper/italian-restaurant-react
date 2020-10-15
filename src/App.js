@@ -1,24 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import About from './About'
+import Menu from './Menu'
+import Gallery from './Gallery'
+import Reservation from './Reservation'
+import Footer from './Footer'
+import SimpleReactLightBox from "simple-react-lightbox"
+import './header.scss'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <SimpleReactLightBox>
+      {/* Header  */}
+      <header class="header">
+        <div class="header__header-box">
+            <div class="header-text">
+                <span class="header-text--main-text">Trattoria Due</span>
+                <span class="header-text--slogan-text">Freshest taste of Italy</span>
+            </div>
+        </div>
+        
+    </header>
+      {/* About */}
+      <div className="about">
+        <About />
+      </div>
+      {/* Menu */}
+      <div className="menu">
+        <Menu />
+      </div>
+      {/* Gallery */}
+      <div className="gallery">
+        <Gallery />
+      </div>
+      {/* Reservations */}
+      <div className="reservation">
+        <Reservation />
+      </div>
+      {/* Contact */}
+      {/* <div className="contact">
+        <Contact />
+      </div> */}
+      {/* Footer */}
+      <div className="footer">
+        <Footer />
+      </div>
+      </SimpleReactLightBox>
     </div>
   );
 }

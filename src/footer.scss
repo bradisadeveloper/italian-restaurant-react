@@ -1,0 +1,84 @@
+.footer {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(rgb(255, 255, 255), 0.8),
+        rgba(rgb(204, 201, 204), 0.8)),
+    url(./images/trattoria5.jpg);
+    font-size: 1.4rem;
+    background-size: cover;
+    background-position: top;
+
+    &__name-box {
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+
+    &__name {
+        font-family: "Lato", sans-serif;
+        font-size: 4rem;
+        height: auto;
+        letter-spacing: 2rem;
+        margin: 0 auto;
+        padding-top: 10rem;
+        text-align: center;
+        color: rgb(126, 0, 0);;
+
+    }
+
+    &__navigation {
+        border-top: 1px solid grey;
+        padding-top: 2rem;
+        display: inline-block;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: rgb(126, 0, 0);
+            background-color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+            color: rgb(126, 0, 0);
+            box-shadow: 0 1rem 2rem rgba(#000000, .4);
+            transform: rotate(2deg) scale(1.1);
+        }
+    }
+
+    &__copyright {
+        border-top: 1px solid grey;
+        padding-top: 2rem;
+        width: 80%;
+        float: right;
+    }
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+    color: rgb(0, 0, 0);
+
+    .col-1-of-2 {
+        width: calc((100% - #{6rem}) / 2);
+        
+    }
+
+}

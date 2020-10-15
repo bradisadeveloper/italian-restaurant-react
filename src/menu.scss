@@ -1,0 +1,90 @@
+.section-menu {
+    padding: 5rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(rgb(255, 255, 255), 0.8),
+        rgba(rgb(204, 201, 204), 0.8)),
+    url(./images/trattoria5.jpg);
+    background-size: cover;
+
+}
+
+.u-center-text {
+    text-align: center !important;
+}
+
+.u-margin-bottom-big {
+    margin-bottom: 8rem !important;
+}
+
+.heading-secondary {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: rgb(255, 255, 255);
+    color: black;
+    letter-spacing: 2px;
+    transition: all .2s;
+}
+
+// Columns for each sub-menu
+.submenu {
+        width: 75%;
+        margin: 0 auto;
+        box-shadow: 0 3rem 6rem rgba(204, 201, 204, .1);
+        background-color: white;
+        border-radius: 3px;
+        padding: 10rem;
+        padding-left: 9rem;
+        font-size: 1.6rem;
+}
+
+// Listing of each dish
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+
+    &:not(:last-child) {
+        margin-bottom: 8rem;
+    }
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    //attributes
+    [class^="col-"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: 6rem;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{6rem}) / 2);
+        
+    }
+
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 1.5rem !important;
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
